@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DesignPatterns/src/com/bridgelabz/creational/singleton/StatocBlockSingleton.java&apos; to &apos;StaticBlockSingleton.java&apos;" description="Rename resource &apos;StatocBlockSingleton.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/bridgelabz/creational/singleton/StatocBlockSingleton.java" name="StaticBlockSingleton.java" stamp="1569738022315" updateReferences="true"/>
+</session>
