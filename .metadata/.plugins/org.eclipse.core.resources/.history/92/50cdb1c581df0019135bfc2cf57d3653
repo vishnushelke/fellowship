@@ -1,0 +1,10 @@
+package task;
+
+public class MyThreadClass extends Thread{
+
+	int[] a=new int[5];
+	public int run(int i)
+	{
+		return a[i];
+	}
+}

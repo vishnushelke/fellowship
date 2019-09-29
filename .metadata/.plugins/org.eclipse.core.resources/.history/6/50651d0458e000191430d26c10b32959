@@ -1,0 +1,27 @@
+package com.bridgelabz.model;
+
+public class Patient {
+
+	private String name;
+	private String mobileNumber;
+	private String ID;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getMobileNumber() {
+		return mobileNumber;
+	}
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
+	}
+	public String getAge() {
+		return ID;
+	}
+	public void setAge(String age) {
+		this.ID = age;
+	}
+	
+}

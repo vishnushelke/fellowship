@@ -1,0 +1,33 @@
+package com.bridgelabz.algorithm;
+import java.util.*;
+import com.bridgelabz.utility.Utility;
+
+public class P4MainFunctionToCallSortingSearching {
+	
+	public static void display(int[] a)
+	{
+		int n=a.length;
+		for(int i=0;i<n;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+	}
+	
+	public static void displayString(String[] a)
+	{
+		int n=a.length;
+		for(int i=0;i<n;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int[] a= {15,40,56,84,11,75};
+		String[] b= {"vishnu","keshav","rishi","priyanka","abhishek","vaishnavi"};
+		
+	}
+
+}

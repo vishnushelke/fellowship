@@ -1,0 +1,39 @@
+{
+	"doctors": [
+		{
+			"name": "dr. vishnu",
+			"id": "ent/1",
+			"specialization": "ent",
+			"availability": "am",
+			"isfull": false
+		},
+		{
+			"name": "dr. ravi",
+			"id": "heart/1",
+			"specialization": "heart",
+			"availability": "am",
+			"isfull": false
+		},
+		{
+			"name": "rishi",
+			"id": "homeopathy/1",
+			"specialization": "homeopathy",
+			"availability": "am",
+			"isfull": false
+		},
+		{
+			"name": "abhishek",
+			"id": "physio/1",
+			"specialization": "physio",
+			"availability": "am",
+			"isfull": false
+		},
+		{
+			"name": "priyanka",
+			"id": "dentist/1",
+			"specialization": "dentist",
+			"availability": "pm",
+			"isfull": false
+		}
+	]
+}

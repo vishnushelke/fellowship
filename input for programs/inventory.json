@@ -1,0 +1,21 @@
+{
+  "Rice":[
+    {
+      "name":"basmati",
+      "weight":"15",
+      "pricePerKG":"200"
+    },
+    {
+       "name":"kolam",
+      "weight":"20",
+      "pricePerKG":"50"
+    },
+    {
+       "name":"indrayani",
+      "weight":"30",
+      "pricePerKG":"60"
+    }
+    ]
+
+
+}

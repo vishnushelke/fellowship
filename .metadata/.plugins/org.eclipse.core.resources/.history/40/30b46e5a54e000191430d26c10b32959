@@ -1,0 +1,40 @@
+{
+	"doctors": [
+	  [
+	    {
+			"name": "dr. vishnu",
+			"id": "2019/001",
+			"specialization": "ent",
+			"availability": "am",
+			"isfull": false
+		},
+		{
+			"name": "dr. ravi",
+			"id": "2019/002",
+			"specialization": "ent",
+			"availability": "am",
+			"isfull": false
+		}
+	    
+	    ],
+	    [
+	      {
+			"name": "rishi",
+			"id": "2019/003",
+			"specialization": "homeopathy",
+			"availability": "am",
+			"isfull": false
+		},
+		{
+			"name": "abhishek",
+			"id": "2019/004",
+			"specialization": "homeopathy",
+			"availability": "am",
+			"isfull": false
+		}
+	      ]
+		
+		  
+		]
+	
+}

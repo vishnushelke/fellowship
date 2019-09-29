@@ -1,0 +1,15 @@
+package com.bridgelabz.data_structure;
+import java.io.*;
+import java.util.*;
+public class P1UnOrderedList {
+	public static void main(String[] args) throws IOException {
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of words you want to enter");
+		int n=sc.nextInt();
+		System.out.println("Enter the word to be searched");
+		String search1=sc.nextLine();
+		
+		
+	}
+}

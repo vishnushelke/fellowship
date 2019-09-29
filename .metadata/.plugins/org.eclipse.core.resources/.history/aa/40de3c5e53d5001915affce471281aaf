@@ -1,0 +1,63 @@
+package com.bridgelabz.data_structure;
+import java.io.*;
+import java.util.*;
+public class P1UnOrderedList {
+	
+	static class Node
+	{
+		String data;
+		Node next;
+	}
+	static Node head;
+	public static P1UnOrderedList insert(String data)
+	{
+		P1UnOrderedList list = new P1UnOrderedList();
+		Node newnode=new Node();
+		newnode.data=data;
+		
+		if(head==null)
+		{
+			head=newnode;
+		}
+		else
+		{
+			Node n=head;
+			while(n.next!=null)
+			{
+				n=n.next;
+			}
+			n.next=newnode;
+		}
+		return list;
+					
+	}
+	
+	public static void display()
+	{
+		Node n=head;
+		while(n!=null)
+		{
+			System.out.print(n.data+" ");
+		}
+	}
+
+	public static void main(String[] args) throws IOException {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of words you want to enter");
+		int n=sc.nextInt();
+		P1UnOrderedList list = new P1UnOrderedList();
+		File f=new File("/home/user/Desktop/vishnu/input for programs/unOrdered.txt");
+		FileReader fr=new FileReader(f);
+		BufferedReader br=new BufferedReader(fr);
+		String []s1=new String[n];
+
+		String s=br.readLine();
+		s1=s.split(" ");
+		for(int i=0;i<s1.length;i++)
+		{
+			System.out.print(s1[i]+" ");
+		}
+		
+	}
+
+}

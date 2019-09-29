@@ -1,0 +1,15 @@
+package com.bridgelabz.data_structure;
+
+public class IntLinkedList {
+
+	public class Node
+	{
+		int data;
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.bridgelabz.data_structure;
+import java.io.*;
+public class P3SimpleParanthesis {
+
+	public static void main(String[] args) throws IOException {
+		Stack<Character> stack=new Stack<Character>();
+		File f=new File("/home/user/Desktop/vishnu/input for programs/SimpleParanthesis.txt");
+		FileReader fr=new FileReader(f);
+		BufferedReader br=new BufferedReader(fr);
+		
+		String s=br.readLine();
+		System.out.println(s);
+		int n=s.length();
+		for (int i = 0; i < n; i++) {
+			if(s.charAt(i)=='(')
+			{
+				stack.push('(');
+			}
+			else
+			{
+				stack.pop();
+			}
+		}
+		if(Stack.size()==0)
+		{
+			System.out.println("True");
+		}
+		else
+		{
+			
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.bridgelabz.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AddresBookModel {
+	List<State> state;
+
+	public ArrayList<Person> getState() {
+		return state;
+	}
+
+	public void setState(ArrayList<Person> persons) {
+		this.state = persons;
+	}
+	
+}

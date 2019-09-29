@@ -1,0 +1,25 @@
+package com.bridgelabz.oops;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
+import com.bridgelabz.model.CompanySharesModel;
+
+public class ListOfCompanyShares {
+
+	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+//		ObjectMapper mapper =new ObjectMapper();
+//		CompanySharesModel model=new CompanySharesModel();
+//		
+//		String filepath="/home/user/Desktop/vishnu/bridgelabzJavaPrograms/javaprograms/bootcamp/Files/json files/Companies.json";
+//		String outfile="/home/user/Desktop/vishnu/bridgelabzJavaPrograms/javaprograms/bootcamp/Files/json files/shresusinglinkedlist";
+//		model=mapper.readValue(new File(filepath), model.getClass());
+//
+//		mapper.writeValue(new File(outfile), model);
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.bridgelabz.data_structure;
+import java.io.*;
+import java.util.*;
+public class P1UnOrderedList {
+	
+	
+
+	public static void main(String[] args) throws IOException {
+		Scanner sc=new Scanner(System.in);
+		File f=new File("/home/user/Desktop/vishnu/input for programs/unOrdered.txt");
+		FileReader fr=new FileReader(f);
+		BufferedReader br=new BufferedReader(fr);
+		String []s1=null;
+		String s="";
+	
+		while((s=br.readLine())!=null)
+		{
+			s1=s.split(" ");
+		}
+		
+		for (int i = 0; i < s1.length; i++) {
+			System.out.println(s1[i]);
+		}
+		LinkedList<Integer> list=new LinkedList<Integer>();
+	}
+
+}

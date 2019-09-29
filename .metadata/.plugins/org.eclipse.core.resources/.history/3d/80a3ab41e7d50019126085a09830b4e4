@@ -1,0 +1,12 @@
+package com.bridgelabz.data_structure;
+
+public class LinkedList<T> {
+	
+	 Node<T> head;
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

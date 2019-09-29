@@ -1,0 +1,10 @@
+package com.bridgelabz.data_structure;
+
+public class P3SimpleParanthesis {
+
+	public static void main(String[] args) {
+	Stack<Character> stack=new Stack<Character>();
+	File f=new File("/home/user/Desktop/vishnu/input for programs/SimpleParanthesis.txt");
+	}
+
+}

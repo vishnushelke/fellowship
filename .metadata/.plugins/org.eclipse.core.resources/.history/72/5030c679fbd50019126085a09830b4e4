@@ -1,0 +1,35 @@
+/******************************************************************************
+ *  Compilation:  javac -d bin P2OrderedList.java
+ *  Execution:    java -cp bin com.bridgelabz.algorithm.P2OrderedList n
+ *  
+ *  Purpose: Takes unOrdered,Sorts the list and searches the word taking from User.
+ *  		 if found,deletes that word else inserts it into list at appropriate location. 
+ *
+ *  @author  Vishnu Shelke
+ *  @version 1.0
+ *  @since   13-09-2019
+ *
+ ******************************************************************************/
+package com.bridgelabz.data_structure;
+import java.io.*;
+import java.util.*;
+public class P2OrderedList {
+
+	public static void main(String[] args) throws IOException {
+		LinkedList<Integer> list=new LinkedList<Integer>();
+		File f=new File("/home/user/Desktop/vishnu/input for programs/Ordered.txt");
+//		FileReader fr=new FileReader(f);
+//		BufferedReader br=new BufferedReader(fr);
+//		
+		int[] num=null;
+		Scanner sc=new Scanner(f);
+		int i=0;
+		while(sc.equals(null))
+		{
+			num[i]=sc.nextInt();
+			i++;
+		}
+		
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.bridgelabz.data_structure;
+
+public class LinkedList<T> {
+	
+	 Node<T> head;
+	 
+	 public LinkedList<T> insert(T data)
+	 {
+		 LinkedList<T> list=new LinkedList<T>();
+		 Node<T> newnode= new Node<T>();
+		 newnode.data=data;
+		 
+		 if(head==null)
+		 {
+			 head=newnode;
+		 }
+		 else
+		 {
+			 Node<T> n=head;
+			 while(n.next!=null)
+				 n=n.next;
+			 n.next=newnode;
+		 }
+		 return list;
+	 }
+	 
+	 public void show()
+	 {
+		 Node n=head;
+		 while(n!=null)
+		 {
+			 System.out.print(n.data);
+		 }
+	 }
+
+	public static void main(String[] args) {
+		LinkedList list=new LinkedList();
+		list=list.insert(5);
+	}
+
+}

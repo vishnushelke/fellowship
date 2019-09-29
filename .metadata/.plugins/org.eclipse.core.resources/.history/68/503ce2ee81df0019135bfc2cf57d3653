@@ -1,0 +1,10 @@
+package task;
+
+public class MyThreadEven {
+
+	int[] a= {0,2,4,6,8};
+	public int run(int i)
+	{
+		return a[i];
+	}
+}
