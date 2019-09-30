@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.bridgelabz.algorithm.P11DayOfWeek"/>
-    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Type.ForAll"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.data_structure.Stack"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.functional.IsPrime"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.datastructure.LinkedList"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.serialize.Serializer"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.inventoryModel1"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.AddresBookModel"/>
     <fullyQualifiedTypeName name="com.bridgelabz.creational.factory.PC"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.services.SocketClassAdapterImpl"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.model.Volt"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.model.SocketAdapter"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.model.Socket"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.services.SocketObjectAdapterImpl"/>
+    <fullyQualifiedTypeName name="com.sun.jdi.connect.spi.Connection"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package com.bridgelabz.structural.services;
+
+public class SocketObjectAdapterImpl {
+
+}

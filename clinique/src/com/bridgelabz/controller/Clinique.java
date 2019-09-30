@@ -81,7 +81,7 @@ public class Clinique {
 				case 1: // search doctor by name
 					System.out.println("Enter the name of a doctor");
 					doctor = OopsUtility.searchDoctorByName(Utility.stringScan(), doctors);
-					if (doctor != null)
+					if (doctor.getName() != null)
 						System.out.println(doctor);
 					else
 						System.out.println("doctor not found");
@@ -121,6 +121,7 @@ public class Clinique {
 					break;
 
 				}
+				break;
 			case 4:// search a patient
 				System.out.println("What do you know about a patient?\n1.name\n2.ID\n3.Mobile Number");
 				switch (Utility.intScan()) {

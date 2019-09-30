@@ -1,0 +1,5 @@
+package com.bridgelabz.structural.facade;
+
+public class FacadePatternTest {
+
+}

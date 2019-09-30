@@ -1,8 +1,0 @@
-package com.bridgelabz.model;
-
-import java.util.ArrayList;
-
-public class CompanysharesModel {
-
-	private ArrayList<Company> companyshares;
-}

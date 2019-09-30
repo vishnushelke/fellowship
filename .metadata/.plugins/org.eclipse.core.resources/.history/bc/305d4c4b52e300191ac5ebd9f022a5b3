@@ -1,0 +1,5 @@
+package com.bridgelabz.structural.model;
+
+public class Volt {
+
+}
