@@ -216,7 +216,7 @@ public static void showPopularDoctor(ArrayList<Doctor> doctors) {
 		for (int j = i+1; j < doctors.size(); j++) {
 			Doctor doctornew=doctors.get(j);
 			Doctor obj=doctornew;
-			if(doctor.getNumberOfAppointments()>doctornew.getNumberOfAppointments())
+			if(doctor.getNumberOfAppointments()>doctor.getNumberOfAppointments())
 			{
 				doctors.set(j, doctor);
 				doctors.set(i, obj);
@@ -224,7 +224,7 @@ public static void showPopularDoctor(ArrayList<Doctor> doctors) {
 		}
 		
 	}
-	System.out.println("Popular doctor is "+doctors.get(doctors.size()-1).getName());
+	System.out.println("Popular doctor is "+doctors.get(0).getName());
 }
 
 public static void showPopularSpecialization(ArrayList<Doctor> doctors) {
@@ -233,7 +233,7 @@ public static void showPopularSpecialization(ArrayList<Doctor> doctors) {
 		for (int j = i+1; j < doctors.size(); j++) {
 			Doctor doctornew=doctors.get(j);
 			Doctor obj=doctornew;
-			if(doctor.getNumberOfAppointments()>doctornew.getNumberOfAppointments())
+			if(doctor.getNumberOfAppointments()>doctor.getNumberOfAppointments())
 			{
 				doctors.set(j, doctor);
 				doctors.set(i, obj);
@@ -241,7 +241,7 @@ public static void showPopularSpecialization(ArrayList<Doctor> doctors) {
 		}
 		
 	}
-	System.out.println("Popular Specialization is "+doctors.get(doctors.size()-1).getSpecialization());
+	System.out.println("Popular Specialization is "+doctors.get(0).getSpecialization());
 	
 }
 
