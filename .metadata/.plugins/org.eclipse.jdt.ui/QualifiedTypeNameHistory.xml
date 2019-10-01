@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.serialize.Serializer"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.inventoryModel1"/>
     <fullyQualifiedTypeName name="sun.security.provider.PolicyParser.GrantEntry"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.bridgelabz.structural.model.Socket"/>
     <fullyQualifiedTypeName name="com.bridgelabz.structural.services.SocketObjectAdapterImpl"/>
     <fullyQualifiedTypeName name="com.sun.jdi.connect.spi.Connection"/>
+    <fullyQualifiedTypeName name="java.util.Observer"/>
 </qualifiedTypeNameHistroy>
