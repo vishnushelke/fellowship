@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.serialize.Serializer"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.inventoryModel1"/>
-    <fullyQualifiedTypeName name="sun.security.provider.PolicyParser.GrantEntry"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.inventoryModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Grains"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="javax.swing.text.DateFormatter"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.rice"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.wheat"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.pulses"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.InventoryModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.AdressbookModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Maharashtra"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.Karnataka"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.Kerala"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Person"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.State"/>
     <fullyQualifiedTypeName name="com.bridgelabz.oops.AddressBook"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.StockAccountModel"/>
@@ -44,12 +30,10 @@
     <fullyQualifiedTypeName name="com.bridgelabz.model.Company"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.CompanySharesModel"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.utility.OopsUtility"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.Patient"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.Doctor"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.AddresBookModel"/>
     <fullyQualifiedTypeName name="com.bridgelabz.creational.factory.PC"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
@@ -60,4 +44,20 @@
     <fullyQualifiedTypeName name="com.bridgelabz.structural.services.SocketObjectAdapterImpl"/>
     <fullyQualifiedTypeName name="com.sun.jdi.connect.spi.Connection"/>
     <fullyQualifiedTypeName name="java.util.Observer"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.model.Person"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.utility.OopsUtility"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="Connector"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.repository.Connector"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.services.Jdbc"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.preparedstatement.services.ImplJdbc"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.statement.services.ImplCrudStatement"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.services.Utility"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.preparedstatement.services.ImplCrudPreparedStatement"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.statement.repository.DbConnector"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

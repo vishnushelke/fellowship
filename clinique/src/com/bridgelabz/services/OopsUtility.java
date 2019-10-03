@@ -11,6 +11,7 @@ import com.bridgelabz.model.Company;
 
 import com.bridgelabz.model.Doctor;
 import com.bridgelabz.model.Patient;
+import com.bridgelabz.model.Person;
 
 public class OopsUtility {
 
@@ -243,6 +244,18 @@ public static void showPopularSpecialization(ArrayList<Doctor> doctors) {
 	}
 	System.out.println("Popular Specialization is "+doctors.get(doctors.size()-1).getSpecialization());
 	
+}
+
+public static Person addPerson(String firstname, String lastname, String address, String city, int zip, String mobileNumber) {
+	Person person=new Person();
+	person.setAddress(address);
+	person.setCity(city);
+	person.setFirstname(firstname);
+	person.setLastname(lastname);
+	person.setPhone(mobileNumber);
+	person.setZip(zip);
+
+	return person;
 }
 
 }
