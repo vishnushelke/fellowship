@@ -1,8 +1,17 @@
+/******************************************************************************
+ *  Compilation:  javac -d bin PrototypeTest.java
+ *  Execution:    java -cp bin com.bridgelabz.algorithm.PrototypeTest n
+ *  
+ *  Purpose: Example of Factory Prototype Pattern
+ *
+ *  @author  Vishnu Shelke
+ *  @version 1.0
+ *  @since   29-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.creational.prototype;
 
 import java.util.List;
-
-import com.bridgelabz.creational.prototype.*;
 
 public class PrototypeTest {
 

@@ -1,4 +1,4 @@
-package com.bridgelabz.statement.repository;
+package com.bridgelabz.preparedstatement.repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,3 +1,14 @@
+/******************************************************************************
+ *  Compilation:  javac -d bin ShoppingCartClient.java
+ *  Execution:    java -cp bin com.bridgelabz.algorithm.ShoppingCartClient n
+ *  
+ *  Purpose: Example of visitor Design Pattern
+ *
+ *  @author  Vishnu Shelke
+ *  @version 1.0
+ *  @since   30-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.behavioral.visitor;
 
 public class ShoppingCartClient {

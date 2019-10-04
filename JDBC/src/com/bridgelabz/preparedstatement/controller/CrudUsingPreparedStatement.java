@@ -1,14 +1,29 @@
+/******************************************************************************
+ *  Compilation:  javac -d bin CrudUsingPreparedStatement.java
+ *  Execution:    java -cp bin com.bridgelabz.algorithm.CrudUsingPreparedStatement n
+ *  
+ *  Purpose: Does CRUD operations using Prepared statement
+ *
+ *  @author  Vishnu Shelke
+ *  @version 1.0
+ *  @since   03-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.preparedstatement.controller;
 
-import java.sql.*;
+import java.util.Scanner;
+
+import com.bridgelabz.preparedstatement.model.Student;
+
+//Login Page remained
 
 import com.bridgelabz.preparedstatement.services.ImplCrudPreparedStatement;
-
-import com.bridgelabz.statement.repository.DbConnector;
 
 public class CrudUsingPreparedStatement {
 
 	public static void main(String[] args) throws Exception {
+		Student student= new Student();
+		Scanner sc= new Scanner(System.in);
 		ImplCrudPreparedStatement util = new ImplCrudPreparedStatement();
 
 		boolean exit = false;
@@ -18,10 +33,10 @@ public class CrudUsingPreparedStatement {
 			switch (ImplCrudPreparedStatement.intScan()) {
 			case 1:// insert into table
 				System.out.println("enter roll number");
-				int rollNumber = ImplCrudPreparedStatement.intScan();
+				student.setRollNumber(sc.nextInt());
 				System.out.println("Enter the name");
-				String name = ImplCrudPreparedStatement.stringScan();
-				util.insertValueInPreparedStatement(rollNumber,name);
+				student.setName(sc.next());
+				util.insertValueInPreparedStatement(student);
 				break;
 
 			case 2:// read using prepared statement
@@ -29,7 +44,12 @@ public class CrudUsingPreparedStatement {
 				break;
 
 			case 3:// update using prepared statement
-				util.updateInPreparedStatement();
+				Student studentUpdate = new Student();
+				System.out.println("Enter roll number of person you wish to edit");
+				int rollNumber=sc.nextInt();
+				System.out.println("Enter new name");
+				studentUpdate.setName(sc.next());
+				util.updateInPreparedStatement(studentUpdate,rollNumber);
 				break;
 
 			case 4:// delete using prepared statement

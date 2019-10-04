@@ -1,12 +1,28 @@
+/******************************************************************************
+ *  Compilation:  javac -d bin CrudUsingStatement.java
+ *  Execution:    java -cp bin com.bridgelabz.algorithm.CrudUsingStatement n
+ *  
+ *  Purpose: Does CRUD operations using statement
+ *
+ *  @author  Vishnu Shelke
+ *  @version 1.0
+ *  @since   03-10-2019
+ *
+ ******************************************************************************/
+
 package com.bridgelabz.statement.controller;
 
 
+import java.util.Scanner;
+
+import com.bridgelabz.statement.model.Student;
 import com.bridgelabz.statement.services.ImplCrudStatement;
 
 public class CrudUsingStatement {
 
 	public static void main(String[] args) throws Exception {
-
+		Student student = new Student();
+		Scanner sc= new Scanner(System.in);
 		ImplCrudStatement util = new ImplCrudStatement();
 		boolean exit=false;
 		while(!exit)
@@ -16,10 +32,10 @@ public class CrudUsingStatement {
 			switch (ImplCrudStatement.intScan()) {
 			case 1:// create into table
 				System.out.println("enter roll number");
-				int rollNumber=ImplCrudStatement.intScan();
+				student.setRollnumber(sc.nextInt());
 				System.out.println("enter name");
-				String name=ImplCrudStatement.stringScan();
-				util.insertValueInStatement(rollNumber,name);
+				student.setName(sc.next());
+				util.insertValueInStatement(student);
 				System.out.println("after creating :");
 				util.readFromStatement();
 				break;
@@ -30,7 +46,12 @@ public class CrudUsingStatement {
 				break;
 				
 			case 3:// update into the table
-				util.updateInStatement();
+				Student studentUpdate=new Student();
+				System.out.println("enter rollnumber");
+				int rollNumberUpdate=sc.nextInt();
+				System.out.println("Enter name");
+				studentUpdate.setName(sc.next());
+				util.updateInStatement(studentUpdate,rollNumberUpdate);
 				System.out.println("after updating :");
 				util.readFromStatement();
 				break;

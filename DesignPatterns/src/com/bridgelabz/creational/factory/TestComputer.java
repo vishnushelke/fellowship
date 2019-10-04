@@ -1,3 +1,14 @@
+/******************************************************************************
+ *  Compilation:  javac -d bin TestComputer.java
+ *  Execution:    java -cp bin com.bridgelabz.algorithm.TestComputer n
+ *  
+ *  Purpose: Example of Factory Design Pattern
+ *
+ *  @author  Vishnu Shelke
+ *  @version 1.0
+ *  @since   29-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.creational.factory;
 
 public class TestComputer {

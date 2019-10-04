@@ -1,3 +1,14 @@
+/******************************************************************************
+ *  Compilation:  javac -d bin AdapterPatternTest.java
+ *  Execution:    java -cp bin com.bridgelabz.algorithm.AdapterPatternTest n
+ *  
+ *  Purpose: Example of Factory Adapter Pattern
+ *
+ *  @author  Vishnu Shelke
+ *  @version 1.0
+ *  @since   29-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.structural.adapter.controller;
 
 import com.bridgelabz.structural.adapter.model.SocketAdapter;

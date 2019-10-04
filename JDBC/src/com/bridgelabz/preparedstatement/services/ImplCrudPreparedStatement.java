@@ -3,6 +3,7 @@ package com.bridgelabz.preparedstatement.services;
 import java.sql.*;
 import java.util.*;
 
+import com.bridgelabz.preparedstatement.model.Student;
 import com.bridgelabz.preparedstatement.services.ImplCrudPreparedStatement;
 import com.bridgelabz.statement.repository.DbConnector;
 
@@ -11,12 +12,14 @@ public class ImplCrudPreparedStatement implements ICrudPreparedStatement {
 	static Scanner sc = new Scanner(System.in);
 
 	@Override
-	public void insertValueInPreparedStatement(int rollNumber, String name) {
+	public void insertValueInPreparedStatement(Student student) {
 		String query = "insert into student values(?,?)";
 		try {
 			PreparedStatement st = con.prepareStatement(query);
-			st.setInt(1, rollNumber);
-			st.setString(2, name);
+			st.setInt(1, student.getRollNumber());
+			st.setString(2, student.getName());
+			int count=st.executeUpdate();
+			System.out.println(count+" row/s updated");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -38,22 +41,19 @@ public class ImplCrudPreparedStatement implements ICrudPreparedStatement {
 				System.out.println(userInfo);
 			}
 		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
 	}
 
 	@Override
-	public void updateInPreparedStatement() {
+	public void updateInPreparedStatement(Student student,int rollNumber) {
 		int countUpdate;
-		String queryUpdate = "update student set name='mahesh' where rollno=?";
+		String queryUpdate = "update student set name='"+ student.getName()+"' where rollno=?";
 		PreparedStatement stUpdate;
 		try {
 			stUpdate = con.prepareStatement(queryUpdate);
-			System.out.println("enter roll number");
-			int rollUpdate = ImplCrudPreparedStatement.intScan();
-			stUpdate.setInt(1, rollUpdate);
+			stUpdate.setInt(1, rollNumber);
 			countUpdate = stUpdate.executeUpdate();
 			System.out.println("Update output :");
 			System.out.println(countUpdate + " row/s affected");
