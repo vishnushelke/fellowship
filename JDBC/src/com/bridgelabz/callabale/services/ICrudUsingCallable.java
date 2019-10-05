@@ -4,9 +4,9 @@ import com.bridgelabz.callabale.model.Student;
 
 public interface ICrudUsingCallable {
 	
-	public void createCallable(Student student);
+	public int createCallable(Student student);
 	public void readCallable();
-	public void updateCallable(int rollnumber,Student student);
-	public void deleteCallable(int rollNumber);
+	public int updateCallable(int rollnumber,Student student);
+	public int deleteCallable(int rollNumber);
 
 }

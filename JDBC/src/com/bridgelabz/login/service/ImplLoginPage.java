@@ -12,9 +12,9 @@ public class ImplLoginPage implements ILoginPage {
 
 	@Override
 	public void createRegistration(Student student) {
-		String query="insert into student values(?,?)";
+		String query = "insert into student values(?,?)";
 		try {
-			st=con.prepareStatement(query);
+			st = con.prepareStatement(query);
 			st.setInt(1, student.getRollNumber());
 			st.setString(2, student.getName());
 			st.executeUpdate();
@@ -27,7 +27,7 @@ public class ImplLoginPage implements ILoginPage {
 	@Override
 	public boolean login(Student student) {
 		String query = "select * from student";
-		int i = 0;
+
 		try {
 			st = con.prepareStatement(query);
 			ResultSet rs = st.executeQuery();

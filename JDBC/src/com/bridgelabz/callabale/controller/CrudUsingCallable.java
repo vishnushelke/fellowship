@@ -19,7 +19,7 @@ import com.bridgelabz.callabale.services.ImplCrudUsingCallable;
 public class CrudUsingCallable {
 
 	public static void main(String[] args) {
-		Student student=new Student();
+		Student student = new Student();
 		Scanner sc = new Scanner(System.in);
 		ImplCrudUsingCallable util = new ImplCrudUsingCallable();
 		boolean exit = false;
@@ -32,7 +32,7 @@ public class CrudUsingCallable {
 				student.setRollnumber(sc.nextInt());
 				System.out.println("Enter name");
 				student.setName(sc.next());
-				util.createCallable(student);
+				System.out.println(util.createCallable(student) + " row/s affected");
 
 				break;
 
@@ -40,22 +40,23 @@ public class CrudUsingCallable {
 				util.readCallable();
 				break;
 
-			case 3://update using callable
-				Student studentUpdate=new Student();
+			case 3:// update using callable
+				Student studentUpdate = new Student();
 				System.out.println("Enter roll number");
 				int rollNumberUpdate = sc.nextInt();
 				System.out.println("Enter name");
 				studentUpdate.setName(sc.next());
-				util.updateCallable(rollNumberUpdate, studentUpdate);;
+				System.out.println(util.updateCallable(rollNumberUpdate, studentUpdate)+" row/s affected");
+				
 				break;
 
-			case 4://delete using callable
+			case 4:// delete using callable
 				System.out.println("Enter roll number");
 				int rollNumberDelete = sc.nextInt();
-				util.deleteCallable(rollNumberDelete);
+				System.out.println(util.deleteCallable(rollNumberDelete)+" row/s affected");
 				break;
 
-			case 5://exit
+			case 5:// exit
 				exit = true;
 				break;
 

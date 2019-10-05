@@ -10,26 +10,26 @@ public class Batch {
 	public static void main(String[] args) throws SQLException {
 
 		int[] result = executeAllQuery();
-		for (int i : result) {
+		for (int i = 0; i < result.length; i++) {
 			System.out.println(result[i]);
 		}
 	}
 
 	public static int[] executeAllQuery() throws SQLException {
 		String query = "insert into student values(3,'vishnu')";
-		st.addBatch(query);
+		
 		String queryDelete = "delete from student where rollno=2";
-		st.addBatch(queryDelete);
+		
 		String queryUpdate = "update student set name='priyanka' where rollno=1";
-		st.addBatch(queryUpdate);
+	
 		
 
 		con = DbConnector.getConnection();
 
 		st = con.createStatement();
-		
-		
-		
+		st.addBatch(query);
+		st.addBatch(queryDelete);
+		st.addBatch(queryUpdate);
 		return st.executeBatch();
 
 	}

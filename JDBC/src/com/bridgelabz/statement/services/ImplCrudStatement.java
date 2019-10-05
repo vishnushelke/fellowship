@@ -16,21 +16,21 @@ public class ImplCrudStatement implements ICrudStatement {
 	static Statement st = null;
 
 	@Override
-	public void insertValueInStatement(Student student) {
+	public int insertValueInStatement(Student student) {
 
 		String queryCreate = "insert into student values('" + student.getRollnumber() + "','" + student.getName()
 				+ "')";
-
+		int count=0;
 		Statement stCreate;
 		try {
 			stCreate = con.createStatement();
-			int count = stCreate.executeUpdate(queryCreate);
+			count = stCreate.executeUpdate(queryCreate);
 			System.out.println(count + " row/s affected");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		return count;
 	}
 
 	@Override
@@ -51,35 +51,33 @@ public class ImplCrudStatement implements ICrudStatement {
 	}
 
 	@Override
-	public void updateInStatement(Student student, int rollNumber) {
-		String queryUpdate = "update student set name='" + student.getName() + "' where rollno=" + rollNumber + "";
+	public int updateInStatement(Student student) {
+		String queryUpdate = "update student set name='" + student.getName() + "' where rollno=" + student.getRollnumber() + "";
 
 		Statement stUpdate;
 		try {
 			stUpdate = con.createStatement();
-			int countUpdate = stUpdate.executeUpdate(queryUpdate);
-			System.out.println(countUpdate + " row/s affected");
+			return stUpdate.executeUpdate(queryUpdate);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		return 0;
 	}
 
 	@Override
-	public void deleteInStatement() {
-		String queryDelete = "delete from student where rollno=1";
+	public int deleteInStatement(int rollNumber) {
+		String queryDelete = "delete from student where rollno="+rollNumber+"";
 
 		Statement stDelete;
 		try {
 			stDelete = con.createStatement();
-			int countdelete = stDelete.executeUpdate(queryDelete);
-			System.out.println(countdelete + " row/s affected");
+			return stDelete.executeUpdate(queryDelete);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		return 0;
 	}
 
 	public static int intScan() {

@@ -22,21 +22,21 @@ import com.bridgelabz.preparedstatement.services.ImplCrudPreparedStatement;
 public class CrudUsingPreparedStatement {
 
 	public static void main(String[] args) throws Exception {
-		Student student= new Student();
-		Scanner sc= new Scanner(System.in);
+		Scanner sc=new Scanner(System.in);
 		ImplCrudPreparedStatement util = new ImplCrudPreparedStatement();
 
 		boolean exit = false;
 		while (!exit) {
 			System.out.println(
 					"What do you want to do?\n1.create in database\n2.read from database\n3.Update the database\n4.delete from database\n5.exit");
-			switch (ImplCrudPreparedStatement.intScan()) {
+			switch (sc.nextInt()) {
 			case 1:// insert into table
+				Student student= new Student();
 				System.out.println("enter roll number");
 				student.setRollNumber(sc.nextInt());
 				System.out.println("Enter the name");
 				student.setName(sc.next());
-				util.insertValueInPreparedStatement(student);
+				System.out.println(util.insertValueInPreparedStatement(student)+" row/s updated");
 				break;
 
 			case 2:// read using prepared statement
@@ -49,12 +49,12 @@ public class CrudUsingPreparedStatement {
 				int rollNumber=sc.nextInt();
 				System.out.println("Enter new name");
 				studentUpdate.setName(sc.next());
-				util.updateInPreparedStatement(studentUpdate,rollNumber);
+				System.out.println(util.updateInPreparedStatement(studentUpdate,rollNumber)+" row/s updated");
 				break;
 
 			case 4:// delete using prepared statement
-
-				util.deleteInPreparedStatement();
+				System.out.println("Enter roll number");
+				System.out.println(util.deleteInPreparedStatement(sc.nextInt())+" row/s updated");
 				break;
 
 			case 5:
@@ -66,7 +66,7 @@ public class CrudUsingPreparedStatement {
 				break;
 			}
 		}
-
+		sc.close();
 	}
 
 }

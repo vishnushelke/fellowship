@@ -13,19 +13,17 @@ public class ImplCrudUsingCallable implements ICrudUsingCallable {
 	Connection con = DbConnector.getConnection();
 
 	@Override
-	public void createCallable(Student student) {
+	public int createCallable(Student student) {
 		try {
 			CallableStatement st = con.prepareCall("call createStudent(?,?)");
 			st.setInt(1, student.getRollnumber());
 			st.setString(2, student.getName());
-			int count = st.executeUpdate();
-			System.out.println(count + " row/s affected");
-
+			return st.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		return 0;
 	}
 
 	@Override
@@ -45,32 +43,32 @@ public class ImplCrudUsingCallable implements ICrudUsingCallable {
 	}
 
 	@Override
-	public void updateCallable(int rollNumber, Student student) {
+	public int updateCallable(int rollNumber, Student student) {
 		try {
 			CallableStatement st = con.prepareCall("call updateStudent(?,?)");
 			st.setInt(1, rollNumber);
 			st.setString(2, student.getName());
-			int count = st.executeUpdate();
-			System.out.println(count + " row/s affected");
+			return st.executeUpdate();
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		return 0;
 	}
 
 	@Override
-	public void deleteCallable(int rollNumber) {
+	public int deleteCallable(int rollNumber) {
 		try {
 			CallableStatement st = con.prepareCall("call deleteStudent(?)");
 			st.setInt(1, rollNumber);
-			int count = st.executeUpdate();
-			System.out.println(count + " row/s updated");
+			return st.executeUpdate();
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		return 0;
 	}
 	
 

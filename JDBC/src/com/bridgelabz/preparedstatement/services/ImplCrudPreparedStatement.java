@@ -12,19 +12,18 @@ public class ImplCrudPreparedStatement implements ICrudPreparedStatement {
 	static Scanner sc = new Scanner(System.in);
 
 	@Override
-	public void insertValueInPreparedStatement(Student student) {
+	public int insertValueInPreparedStatement(Student student) {
 		String query = "insert into student values(?,?)";
 		try {
 			PreparedStatement st = con.prepareStatement(query);
 			st.setInt(1, student.getRollNumber());
 			st.setString(2, student.getName());
-			int count=st.executeUpdate();
-			System.out.println(count+" row/s updated");
+			return st.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		return 0;
 	}
 
 	@Override
@@ -47,52 +46,35 @@ public class ImplCrudPreparedStatement implements ICrudPreparedStatement {
 	}
 
 	@Override
-	public void updateInPreparedStatement(Student student,int rollNumber) {
-		int countUpdate;
+	public int updateInPreparedStatement(Student student,int rollNumber) {
+		
 		String queryUpdate = "update student set name='"+ student.getName()+"' where rollno=?";
 		PreparedStatement stUpdate;
 		try {
 			stUpdate = con.prepareStatement(queryUpdate);
 			stUpdate.setInt(1, rollNumber);
-			countUpdate = stUpdate.executeUpdate();
-			System.out.println("Update output :");
-			System.out.println(countUpdate + " row/s affected");
+			return stUpdate.executeUpdate();
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-
+		return 0;
 	}
 
 	@Override
-	public void deleteInPreparedStatement() {
+	public int deleteInPreparedStatement(int rollDelete) {
 
-		int countDelete;
+		
 		String queryDelete = "delete from student where rollno=?";
 		PreparedStatement stDelete;
 		try {
 			stDelete = con.prepareStatement(queryDelete);
-			System.out.println("enter roll number");
-			int rollDelete = ImplCrudPreparedStatement.intScan();
 			stDelete.setInt(1, rollDelete);
-			countDelete = stDelete.executeUpdate();
-			System.out.println("delete output :");
-			System.out.println(countDelete + " row/s affected");
+			return stDelete.executeUpdate();
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-
-	}
-
-	public static int intScan() {
-		int n = sc.nextInt();
-		return n;
-	}
-
-	public static String stringScan() {
-		String n = sc.nextLine();
-		return n;
-
+		return 0;
 	}
 }

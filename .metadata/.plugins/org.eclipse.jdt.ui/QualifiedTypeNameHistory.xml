@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Karnataka"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Kerala"/>
-    <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.State"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.oops.AddressBook"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.StockAccountModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Stock"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.StockModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.CustomerInfoModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.CustomerInfo"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.DoctorsModel"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.PatientModel"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.AppointmentModel"/>
@@ -47,17 +34,30 @@
     <fullyQualifiedTypeName name="com.bridgelabz.model.Person"/>
     <fullyQualifiedTypeName name="com.bridgelabz.utility.OopsUtility"/>
     <fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="Connector"/>
     <fullyQualifiedTypeName name="com.bridgelabz.repository.Connector"/>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="com.bridgelabz.services.Jdbc"/>
     <fullyQualifiedTypeName name="com.bridgelabz.preparedstatement.services.ImplJdbc"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.bridgelabz.statement.services.ImplCrudStatement"/>
     <fullyQualifiedTypeName name="com.bridgelabz.services.Utility"/>
     <fullyQualifiedTypeName name="com.bridgelabz.preparedstatement.services.ImplCrudPreparedStatement"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.callabale.services.ICrudUsingCallable"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.callabale.services.ImplCrudUsingCallable"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.statement.model.Student"/>
     <fullyQualifiedTypeName name="com.bridgelabz.statement.repository.DbConnector"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.callabale.model.Student"/>
+    <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.callabale.repository.DbConnector"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.savepoint.server.ISavepointProgram"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.savepoint.server.ImplSavepointTransaction"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.login.service.ILoginPage"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.login.service.ImplLoginPage"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.preparedstatement.repository.DbConnector"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.preparedstatement.model.Student"/>
 </qualifiedTypeNameHistroy>
