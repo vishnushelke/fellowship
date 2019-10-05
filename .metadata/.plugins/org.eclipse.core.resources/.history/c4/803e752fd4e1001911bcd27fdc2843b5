@@ -1,6 +1,0 @@
-package com.bridgelabz.creational.factory;
-
-public class ComputerFactory {
-	public static Computer 
-
-}

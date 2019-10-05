@@ -55,9 +55,9 @@
     <fullyQualifiedTypeName name="com.bridgelabz.savepoint.server.ImplSavepointTransaction"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="com.bridgelabz.login.service.ILoginPage"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.bridgelabz.login.service.ImplLoginPage"/>
     <fullyQualifiedTypeName name="com.bridgelabz.preparedstatement.repository.DbConnector"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.bridgelabz.preparedstatement.model.Student"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
